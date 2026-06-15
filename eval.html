@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evaluation — FIFI 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">FIRE 2026</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="overview.html">Task Overview</a></li>
+    <li><a href="task.html">Task Description</a></li>
+    <li><a href="eval.html" class="active">Evaluation</a></li>
+    <li><a href="dataset.html">Dataset</a></li>
+    <li><a href="dates.html">Important Dates</a></li>
+    <li><a href="organizers.html">Organizers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <h1><span class="accent">Evaluation</span> Metrics</h1>
+  <p>How system outputs are scored for each subtask</p>
+</div>
+
+<section class="content">
+
+  <p>
+    Each subtask uses metrics well-suited to the nature of the prediction — ranking for 
+    Subtask 1 and text similarity for Subtask 2.
+  </p>
+
+  <div class="eval-grid">
+    <div class="eval-card st1">
+      <div style="font-size:36px;margin-bottom:12px;">🔍</div>
+      <div class="metric">MRR@10</div>
+      <h3 style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:#0b1d3a;margin:8px 0;">Subtask 1 — Find It</h3>
+      <p>Mean Reciprocal Rank at 10 measures how highly the correct original title is ranked among the top 10 candidates submitted by a system.</p>
+    </div>
+    <div class="eval-card st2a">
+      <div style="font-size:36px;margin-bottom:12px;">✍️</div>
+      <div class="metric">F1 + BERTScore</div>
+      <h3 style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:#0b1d3a;margin:8px 0;">Subtask 2 — Fix It</h3>
+      <p>Mean token-level F1 Score measures lexical overlap, while BERTScore captures semantic similarity between the reconstructed and original title.</p>
+    </div>
+  </div>
+
+  <h2>Metric Details</h2>
+
+  <ul>
+    <li><strong>MRR@10:</strong> The mean of reciprocal ranks of the correct title across all queries, considering only the top-10 ranked results.</li>
+    <li><strong>Mean F1 Score:</strong> Harmonic mean of token-level precision and recall between predicted and reference titles.</li>
+    <li><strong>BERTScore:</strong> Uses contextual BERT embeddings to measure semantic similarity, capturing meaning beyond surface-level token overlap.</li>
+  </ul>
+
+</section>
+
+<footer>
+  <p>© 2026 <span>FIFI Shared Task</span> · FIRE 2026 · All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

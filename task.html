@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Description — FIFI 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">FIRE 2026</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="overview.html">Task Overview</a></li>
+    <li><a href="task.html" class="active">Task Description</a></li>
+    <li><a href="eval.html">Evaluation</a></li>
+    <li><a href="dataset.html">Dataset</a></li>
+    <li><a href="dates.html">Important Dates</a></li>
+    <li><a href="organizers.html">Organizers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <h1>Task <span class="accent">Description</span></h1>
+  <p>Two complementary subtasks — retrieval and reconstruction</p>
+</div>
+
+<section class="content">
+
+  <p>
+    The shared task is divided into two complementary subtasks, each targeting a 
+    different aspect of the title provenance problem.
+  </p>
+
+  <div class="subtask-grid">
+    <div class="subtask-card find">
+      <div class="subtask-num">01</div>
+      <h2>Find It</h2>
+      <p style="font-size:13px;color:var(--teal2);font-weight:600;margin-bottom:12px;">Original Title Retrieval &amp; Ranking</p>
+      <p>
+        Participants are given a reformulated title and must generate a ranked list of 
+        up to ten candidate titles ordered by their likelihood of being the true source title. 
+        Systems are judged on how high they place the correct original.
+      </p>
+    </div>
+    <div class="subtask-card fix">
+      <div class="subtask-num">02</div>
+      <h2>Fix It</h2>
+      <p style="font-size:13px;color:var(--coral);font-weight:600;margin-bottom:12px;">Original Title Reconstruction</p>
+      <p>
+        Participants receive a reformulated title together with its stylistic cue 
+        (Technical, Accessible, or Catchy). The goal is to reconstruct the original 
+        research title — evaluating a system's ability to recover underlying source content 
+        despite LLM-introduced stylistic transformations.
+      </p>
+    </div>
+  </div>
+
+  <h2>Input &amp; Output Format</h2>
+
+  <ul>
+    <li><strong>Input (Subtask 1):</strong> A reformulated title (no style cue provided)</li>
+    <li><strong>Output (Subtask 1):</strong> Ranked list of up to 10 candidate original titles</li>
+    <li><strong>Input (Subtask 2):</strong> A reformulated title + its style label (Technical / Accessible / Catchy)</li>
+    <li><strong>Output (Subtask 2):</strong> A single reconstructed original title</li>
+  </ul>
+
+</section>
+
+<footer>
+  <p>© 2026 <span>FIFI Shared Task</span> · FIRE 2026 · All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

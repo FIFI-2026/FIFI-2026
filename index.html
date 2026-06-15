@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFI 2026 — Scientific Title Retrieval & Rewriting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">FIRE 2026</div>
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="overview.html">Task Overview</a></li>
+    <li><a href="task.html">Task Description</a></li>
+    <li><a href="eval.html">Evaluation</a></li>
+    <li><a href="dataset.html">Dataset</a></li>
+    <li><a href="dates.html">Important Dates</a></li>
+    <li><a href="organizers.html">Organizers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-blob"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span>⚡</span> FIRE 2026 · Shared Task
+    </div>
+
+    <h1>Find It <span>Fix It</span><br>FIFI 2026</h1>
+
+    <p class="hero-sub">
+      Shared Task on Scientific Title Retrieval &amp; Rewriting — 
+      can your system trace an LLM-rewritten title back to its source?
+    </p>
+
+    <!-- Signature element: animated floating title-style cards -->
+    <div class="title-cards">
+      <div class="tc">
+        <div class="tc-label technical">⚙ Technical</div>
+        <p>"A Transformer-Based Framework for Cross-Domain Semantic Title Alignment"</p>
+      </div>
+      <div class="tc">
+        <div class="tc-label accessible">📖 Accessible</div>
+        <p>"How AI Learns to Match Research Topics Across Different Fields"</p>
+      </div>
+      <div class="tc">
+        <div class="tc-label catchy">🔥 Catchy</div>
+        <p>"Lost in Translation? AI Finally Bridges the Gap Between Research Silos"</p>
+      </div>
+    </div>
+
+    <div class="hero-btns">
+      <a href="overview.html" class="btn btn-primary">Explore the Task →</a>
+      <a href="dates.html" class="btn btn-outline">📅 Key Dates</a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats strip -->
+<div class="stats-strip">
+  <div class="stat">
+    <div class="stat-num">30</div>
+    <div class="stat-label">Reformulations per title</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">3</div>
+    <div class="stat-label">Style categories</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">2</div>
+    <div class="stat-label">Subtasks</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">10</div>
+    <div class="stat-label">Variants per style</div>
+  </div>
+</div>
+
+<!-- Quick-glance section -->
+<section style="max-width:900px;margin:0 auto;padding:72px 24px;">
+  <h2 style="font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:800;color:#0b1d3a;margin-bottom:14px;letter-spacing:-0.5px;">
+    What is FIFI?
+  </h2>
+  <p style="font-size:17px;color:#374151;line-height:1.8;margin-bottom:36px;">
+    LLMs can rewrite scientific titles into three styles — Technical, Accessible, and Catchy. 
+    FIFI challenges participants to <strong>reverse that transformation</strong>: given only 
+    a reformulated title, retrieve or reconstruct the original research title.
+  </p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+    <div style="background:white;border-radius:14px;padding:28px;border:1px solid #e5e7eb;box-shadow:0 4px 24px rgba(0,0,0,0.07);border-top:4px solid #00d4c8;">
+      <div style="font-size:28px;margin-bottom:10px;">🔍</div>
+      <h3 style="font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#0b1d3a;margin-bottom:8px;">Subtask 1: Find It</h3>
+      <p style="font-size:14px;color:#555;line-height:1.6;">Rank up to 10 candidate titles by likelihood of being the true source. Evaluated with <strong>MRR@10</strong>.</p>
+    </div>
+    <div style="background:white;border-radius:14px;padding:28px;border:1px solid #e5e7eb;box-shadow:0 4px 24px rgba(0,0,0,0.07);border-top:4px solid #ff6b6b;">
+      <div style="font-size:28px;margin-bottom:10px;">✍️</div>
+      <h3 style="font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:#0b1d3a;margin-bottom:8px;">Subtask 2: Fix It</h3>
+      <p style="font-size:14px;color:#555;line-height:1.6;">Reconstruct the original title from its stylistic variant. Evaluated with <strong>F1 Score</strong> &amp; <strong>BERTScore</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <span>FIFI Shared Task</span> · FIRE 2026 · All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
